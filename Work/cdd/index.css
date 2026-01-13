@@ -1,0 +1,18 @@
+body {
+    background-image: radial-gradient(rgb(5, 5, 90), rgb(133, 12, 12), rgb(36, 77, 36));
+}
+
+#f1{
+    text-align: center;
+    font-size: 100px;
+}
+
+#i1{
+    margin-left: 400px ;
+    width: 500px;
+}
+#b1{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+}
