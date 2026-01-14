@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Mode | Fighting Duo</title>
+
+    <!-- Mode CSS -->
+    <link rel="stylesheet" href="../cdd/mode.css">
+</head>
+<body>
+
+    <main>
+        <div id="modeBox">
+
+            <h1 id="modeTitle">Select Game Mode</h1>
+
+            <div class="modeCard" onclick="selectMode('Normal Mode')">
+                <h2>Normal Mode</h2>
+                <p>
+                    The classic experience. Fight a series of CPU opponents,
+                    culminating in a challenging Boss Fight.
+                </p>
+            </div>
+
+            <div class="modeCard" onclick="selectMode('Story Mode')">
+                <h2>Story Mode</h2>
+                <p>
+                    A narrative-heavy journey with cutscenes, dialogues,
+                    and story-driven battles.
+                </p>
+            </div>
+
+            <div class="modeCard" onclick="selectMode('Training Mode')">
+                <h2>Training / Practice</h2>
+                <p>
+                    Infinite health and configurable AI to practice moves,
+                    combos, and techniques.
+                </p>
+            </div>
+
+            <div class="modeCard" onclick="selectMode('Tutorials')">
+                <h2>Tutorials</h2>
+                <p>
+                    Learn the basics, controls, and mechanics step-by-step
+                    before entering real combat.
+                </p>
+            </div>
+
+            <button class="backBtn" onclick="goBack()">Back</button>
+
+        </div>
+    </main>
+
+    <script>
+        function selectMode(mode) {
+            alert(mode + " selected (logic will be added later)");
+        }
+
+        function goBack() {
+            location.href = "main.html";
+        }
+    </script>
+
+</body>
+</html>
