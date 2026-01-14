@@ -1,0 +1,59 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: black;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Main container */
+main {
+    min-height: 100vh;
+    background-image: url("../../assets/images/P3.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menu box */
+#menuBox {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 60px;
+    border: 2px solid darkorchid;
+    text-align: center;
+}
+
+/* Game title */
+#gameTitle {
+    font-size: 80px;
+    font-style: italic;
+    color: darkorchid;
+    margin-bottom: 40px;
+}
+
+/* Buttons */
+.menuBtn {
+    display: block;
+    width: 300px;
+    margin: 15px auto;
+    padding: 15px;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    border: 2px solid darkorchid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menuBtn:hover {
+    background-color: darkorchid;
+    color: black;
+}
