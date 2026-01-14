@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game | Fighting Duo</title>
+    <title>Loading | Fighting Duo</title>
 
     <!-- Game CSS -->
     <link rel="stylesheet" href="../cdd/game.css">
@@ -11,20 +11,33 @@
 <body>
 
     <main>
-        <div id="gameBox">
+        <div id="loadingBox">
 
-            <h1 id="gameTitle">Fighting Duo</h1>
-            <p id="gameText">Game Scene Loading...</p>
+            <img src="../assets/images/P2.png" id="loadingImage" alt="Game Loading">
 
-            <button class="backBtn" onclick="goBack()">Back to Menu</button>
+            <p id="loadingText">Loading... Please wait</p>
+
+            <div id="progressContainer">
+                <div id="progressBar"></div>
+            </div>
 
         </div>
     </main>
 
     <script>
-        function goBack() {
-            location.href = "main.html";
-        }
+        let progress = 0;
+        const bar = document.getElementById("progressBar");
+
+        const loader = setInterval(() => {
+            progress += 1;
+            bar.style.width = progress + "%";
+
+            if (progress >= 100) {
+                clearInterval(loader);
+                // later this will redirect to actual gameplay
+                // location.href = "play.html";
+            }
+        }, 40);
     </script>
 
 </body>
