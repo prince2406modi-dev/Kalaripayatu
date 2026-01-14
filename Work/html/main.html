@@ -3,14 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fighting Duo</title>
-    <link rel="stylesheet" href="../cdd/index.css">
+    <title>Kalaripayattu</title>
+
+    <!-- Main menu CSS -->
+    <link rel="stylesheet" href="../cdd/main.css">
 </head>
 <body>
+
     <main>
-        <div id="Box1">
-            <h1>Fighting Duo</h1>
+        <div id="menuBox">
+
+            <h1 id="gameTitle">Kalaripayattu</h1>
+
+            <button class="menuBtn" onclick="startGame()">Start Game</button>
+            <button class="menuBtn" onclick="openSettings()">Settings</button>
+            <button class="menuBtn" onclick="exitGame()">Exit</button>
+
         </div>
     </main>
+
+    <script>
+        function startGame() {
+            alert("Game will start here (next step)");
+        }
+
+        function openSettings() {
+            alert("Settings menu coming soon");
+        }
+
+        function exitGame() {
+            alert("Exit button clicked");
+        }
+    </script>
+
 </body>
 </html>
