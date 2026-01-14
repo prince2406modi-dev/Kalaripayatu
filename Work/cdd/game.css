@@ -8,8 +8,8 @@
 /* Body */
 body {
     background-color: black;
-    color: white;
     font-family: "Times New Roman", Times, serif;
+    color: white;
 }
 
 /* Main background */
@@ -26,58 +26,52 @@ main {
     animation: fadeIn 1s ease-out;
 }
 
-/* Game box */
-#gameBox {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 50px 70px;
+/* Loading box */
+#loadingBox {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px 60px;
     text-align: center;
 
     border: 2px solid #00f2ff;
-    box-shadow: 0 0 16px rgba(0, 242, 255, 0.6);
+    box-shadow: 0 0 14px rgba(0, 242, 255, 0.6);
 }
 
-/* Title */
-#gameTitle {
-    font-size: 70px;
+/* Image */
+#loadingImage {
+    width: 450px;
+    margin-bottom: 25px;
+    border: 1px solid #00f2ff;
+}
+
+/* Loading text */
+#loadingText {
+    font-size: 22px;
     margin-bottom: 20px;
     color: #00f2ff;
-
-    text-shadow:
-        0 0 4px rgba(0, 242, 255, 0.9),
-        0 0 10px rgba(0, 242, 255, 0.6);
 }
 
-/* Text */
-#gameText {
-    font-size: 24px;
-    margin-bottom: 35px;
-    opacity: 0.85;
+/* Progress bar container */
+#progressContainer {
+    width: 450px;
+    height: 14px;
+    background-color: #222;
+    border: 1px solid #00f2ff;
+    overflow: hidden;
 }
 
-/* Back button */
-.backBtn {
-    padding: 14px 30px;
-    font-size: 22px;
-
-    background-color: black;
-    color: white;
-
-    border: 2px solid #00f2ff;
-    cursor: pointer;
-
-    transition: 0.25s ease;
-}
-
-.backBtn:hover {
+/* Progress bar */
+#progressBar {
+    height: 100%;
+    width: 0%;
     background-color: #00f2ff;
-    color: black;
+    transition: width 0.1s linear;
 }
 
-/* Animation */
+/* Fade animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: scale(0.96);
+        transform: scale(0.97);
     }
     to {
         opacity: 1;
