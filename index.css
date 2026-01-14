@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}
+main {
+    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    background-image: url(../../assets/images/P3.png);
+}
+
+#f1{
+    margin:auto;
+    text-align: center;
+    font-size: 100px;
+    font-style: italic;
+    font-family: 'times new roman', times, serif;
+    color: darkorchid;
+}
+
+#i1{
+    margin: auto;
+    padding: 20px;
+    width: 600px;
+}
+#f2{
+    margin: auto;
+    width: 800px;
+    height:500px;
+    padding-bottom: 10px;
+}
+
+#Box1{
+    width: 800px;
+    height: 500px;
+    background-color: black;
+    margin: auto;
+    
+}
