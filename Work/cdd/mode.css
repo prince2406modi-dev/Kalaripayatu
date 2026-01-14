@@ -1,0 +1,111 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: black;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Main background */
+main {
+    min-height: 100vh;
+    background-image: url("../assets/images/P3.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: fadeIn 1s ease-out;
+}
+
+/* Mode box */
+#modeBox {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px 60px;
+    width: 720px;
+
+    border: 2px solid #00f2ff;
+    box-shadow: 0 0 14px rgba(0, 242, 255, 0.6);
+}
+
+/* Title */
+#modeTitle {
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+
+    color: #00f2ff;
+    text-shadow:
+        0 0 4px rgba(0, 242, 255, 0.9),
+        0 0 10px rgba(0, 242, 255, 0.6);
+}
+
+/* Mode cards */
+.modeCard {
+    border: 2px solid #00f2ff;
+    padding: 18px 22px;
+    margin: 16px 0;
+
+    cursor: pointer;
+    transition: 0.25s ease;
+
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modeCard h2 {
+    color: #00f2ff;
+    margin-bottom: 8px;
+}
+
+.modeCard p {
+    font-size: 17px;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+/* Hover effect */
+.modeCard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 16px rgba(0, 242, 255, 0.8);
+}
+
+/* Back button */
+.backBtn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 14px;
+
+    font-size: 22px;
+    background-color: black;
+    color: white;
+
+    border: 2px solid #00f2ff;
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.backBtn:hover {
+    background-color: #00f2ff;
+    color: black;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
