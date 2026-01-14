@@ -1,0 +1,86 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: black;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Main background */
+main {
+    min-height: 100vh;
+    background-image: url("../assets/images/P3.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: fadeIn 1s ease-out;
+}
+
+/* Game box */
+#gameBox {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 50px 70px;
+    text-align: center;
+
+    border: 2px solid #00f2ff;
+    box-shadow: 0 0 16px rgba(0, 242, 255, 0.6);
+}
+
+/* Title */
+#gameTitle {
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: #00f2ff;
+
+    text-shadow:
+        0 0 4px rgba(0, 242, 255, 0.9),
+        0 0 10px rgba(0, 242, 255, 0.6);
+}
+
+/* Text */
+#gameText {
+    font-size: 24px;
+    margin-bottom: 35px;
+    opacity: 0.85;
+}
+
+/* Back button */
+.backBtn {
+    padding: 14px 30px;
+    font-size: 22px;
+
+    background-color: black;
+    color: white;
+
+    border: 2px solid #00f2ff;
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.backBtn:hover {
+    background-color: #00f2ff;
+    color: black;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
