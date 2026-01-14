@@ -21,14 +21,21 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* Fade in animation */
+    animation: fadeIn 1.2s ease-in-out;
 }
 
 /* Menu box */
 #menuBox {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 40px 60px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 45px 70px;
     border: 2px solid darkorchid;
     text-align: center;
+
+    /* Glow pulse */
+    box-shadow: 0 0 25px rgba(153, 50, 204, 0.6);
+    animation: pulseGlow 3s infinite ease-in-out;
 }
 
 /* Game title */
@@ -37,23 +44,67 @@ main {
     font-style: italic;
     color: darkorchid;
     margin-bottom: 40px;
+
+    /* Neon glow */
+    text-shadow:
+        0 0 5px darkorchid,
+        0 0 15px darkorchid,
+        0 0 30px rgba(153, 50, 204, 0.8);
 }
 
 /* Buttons */
 .menuBtn {
     display: block;
     width: 300px;
-    margin: 15px auto;
+    margin: 18px auto;
     padding: 15px;
     font-size: 22px;
+
     background-color: black;
     color: white;
     border: 2px solid darkorchid;
     cursor: pointer;
-    transition: 0.3s ease;
+
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
 }
 
+/* Button hover animation */
 .menuBtn:hover {
     background-color: darkorchid;
     color: black;
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 10px darkorchid,
+        0 0 25px darkorchid,
+        0 0 40px rgba(153, 50, 204, 0.9);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Pulse glow animation */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 15px rgba(153, 50, 204, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 35px rgba(153, 50, 204, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(153, 50, 204, 0.4);
+    }
 }
