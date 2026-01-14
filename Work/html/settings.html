@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Fighting Duo</title>
+
+    <!-- Settings CSS -->
+    <link rel="stylesheet" href="../cdd/settings.css">
+</head>
+<body>
+
+    <main>
+        <div id="settingsBox">
+
+            <h1 id="settingsTitle">Settings</h1>
+
+            <!-- Sound -->
+            <div class="settingRow">
+                <span>Sound</span>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <!-- Music -->
+            <div class="settingRow">
+                <span>Music</span>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <!-- Difficulty -->
+            <div class="settingRow">
+                <span>Difficulty</span>
+                <select class="dropdown">
+                    <option>Easy</option>
+                    <option selected>Normal</option>
+                    <option>Hard</option>
+                </select>
+            </div>
+
+            <!-- Fullscreen -->
+            <div class="settingRow">
+                <span>Fullscreen</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <!-- Back button -->
+            <button class="backBtn" onclick="goBack()">Back</button>
+
+        </div>
+    </main>
+
+    <script>
+        function goBack() {
+            location.href = "main.html";
+        }
+    </script>
+
+</body>
+</html>
