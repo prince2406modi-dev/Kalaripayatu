@@ -1,127 +1,78 @@
-/* Reset */
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+/* ===== BODY ===== */
 body {
-    width: 100vw;
     height: 100vh;
-    background-image: url("../assets/images/P3.png");
+    width: 100vw;
+    font-family: "Times New Roman", serif;
+    overflow: hidden;
+    background: black;
+}
+
+/* ===== BACKGROUND ===== */
+.background {
+    position: absolute;
+    inset: 0;
+    background-image: url("../assets/images/main-bg.png");
     background-size: cover;
     background-position: center;
-    font-family: "Times New Roman", Times, serif;
-    color: white;
-    overflow: hidden;
 }
 
-/* ---------- TOP UI ---------- */
-#topUI {
+/* ===== TOP RIGHT UI ===== */
+.top-right-ui {
     position: absolute;
     top: 20px;
-    left: 20px;
     right: 20px;
-
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 12px;
 }
 
-/* Profile icon */
-#profileIcon {
-    font-size: 34px;
-    cursor: pointer;
-}
-
-/* Difficulty dropdown */
-#difficultySelect {
-    background-color: black;
-    color: white;
-    border: 2px solid #00f2ff;
-    padding: 6px 10px;
-    font-size: 16px;
-}
-
-/* Settings button */
 #settingsBtn {
-    background-color: black;
-    color: white;
-    border: 2px solid #00f2ff;
+    width: 42px;
+    height: 42px;
+    background: black;
+    border: 2px solid cyan;
+    color: cyan;
     font-size: 20px;
-    padding: 6px 10px;
     cursor: pointer;
 }
 
-#settingsBtn:hover {
-    background-color: #00f2ff;
-    color: black;
-}
-
-/* ---------- CENTER AREA ---------- */
-#centerArea {
-    position: absolute;
-    top: 80px;
-    bottom: 120px;
-    left: 0;
-    right: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* intentionally empty */
-}
-
-/* ---------- BOTTOM UI ---------- */
-#bottomUI {
-    position: absolute;
-    bottom: 30px;
-    left: 0;
-    right: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-/* Start button (main focus) */
-#startBtn {
-    width: 420px;
-    padding: 18px;
-    font-size: 26px;
-    letter-spacing: 2px;
-
-    background-color: black;
+#difficultySelect {
+    padding: 6px 14px;
+    background: black;
     color: white;
-
-    border: 2px solid #00f2ff;
+    border: 2px solid cyan;
+    font-size: 16px;
     cursor: pointer;
+}
 
-    transition: 0.3s ease;
+/* ===== BOTTOM START BUTTON ===== */
+.bottom-ui {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#startBtn {
+    padding: 18px 70px;
+    font-size: 24px;
+    background: black;
+    color: white;
+    border: 2px solid cyan;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #startBtn:hover {
-    background-color: #00f2ff;
-    color: black;
-    box-shadow: 0 0 15px rgba(0, 242, 255, 0.8);
-}
-
-/* Exit button */
-#exitBtn {
-    padding: 14px 22px;
-    font-size: 18px;
-
-    background-color: black;
-    color: white;
-
-    border: 2px solid #00f2ff;
-    cursor: pointer;
-}
-
-#exitBtn:hover {
-    background-color: #00f2ff;
+    background: cyan;
     color: black;
 }
