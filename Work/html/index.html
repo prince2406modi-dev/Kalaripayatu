@@ -2,26 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fighting Duo</title>
-
-    <!-- Index CSS -->
-    <link rel="stylesheet" href="../cdd/index.css">
+    <title>Kalaripayattu – Main Menu</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
-    <main>
-        <h1 id="f1">Fighting Duo</h1>
+    <!-- Background -->
+    <div class="background"></div>
 
-        <div id="Box1">
-            <img 
-                src="../assets/images/P2.png" 
-                id="f2" 
-                onclick="location.href='main.html'"
-                alt="Start Game"
-            >
-        </div>
-    </main>
+    <!-- Top Right Controls -->
+    <div class="top-right-ui">
+        <button id="settingsBtn">⚙</button>
+
+        <select id="difficultySelect">
+            <option value="easy">Easy</option>
+            <option value="medium" selected>Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+
+    <!-- Bottom Start Button -->
+    <div class="bottom-ui">
+        <button id="startBtn">START GAME</button>
+    </div>
 
 </body>
 </html>
