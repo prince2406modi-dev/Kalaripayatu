@@ -3,42 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalaripayattu</title>
+    <title>Main Menu | Fighting Duo</title>
 
-    <!-- Main menu CSS -->
-    <link rel="stylesheet" href="../cdd/main.css" />
+    <link rel="stylesheet" href="../cdd/main.css">
 </head>
 <body>
 
-    <main>
-        <div id="menuBox">
+    <!-- Top UI -->
+    <div id="topUI">
 
-            <h1 id="gameTitle">Kalaripayattu</h1>
-
-            <button class="menuBtn" onclick="location.href='mode.html'">Start Game</button>
-            <button class="menuBtn" onclick="location.href='settings.html'">Settings</button>
-            <button class="menuBtn" onclick="exitGame()">Exit</button>
-
+        <!-- Profile Icon -->
+        <div id="profileIcon">
+            👤
         </div>
-    </main>
+
+        <!-- Difficulty Selector -->
+        <select id="difficultySelect">
+            <option>Easy</option>
+            <option selected>Medium</option>
+            <option>Hard</option>
+            <option>Extreme</option>
+            <option>Nightmare</option>
+        </select>
+
+        <!-- Settings Button -->
+        <button id="settingsBtn" onclick="location.href='settings.html'">
+            ⚙
+        </button>
+
+    </div>
+
+    <!-- Center Area (EMPTY for future 3D model) -->
+    <div id="centerArea">
+        <!-- 3D Model will come here later -->
+    </div>
+
+    <!-- Bottom UI -->
+    <div id="bottomUI">
+
+        <button id="startBtn" onclick="location.href='mode.html'">
+            START GAME
+        </button>
+
+        <button id="exitBtn" onclick="exitGame()">Exit</button>
+
+    </div>
 
     <script>
-        function startGame() {
-            alert("Game will start here (next step)");
-        }
-
-        function openSettings() {
-            alert("Settings menu coming soon");
-        }
-
         function exitGame() {
-            alert("Exit button clicked");
+            alert("Exit game (browser limitation)");
         }
     </script>
 
 </body>
 </html>
-
-
-
-
